@@ -1,0 +1,6 @@
+List edit web gereja
+1. Taruh logo gereja
+2. Kasih spasi di teks beranda
+3. Kasih tentang kami dan kontak
+4. Jadwal Ibadah
+5. Galeri seperti di web kelas
