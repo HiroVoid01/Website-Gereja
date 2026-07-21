@@ -197,28 +197,33 @@ footer {
 /* PENGATURAN UNTUK TAMPILAN HP (RESPONSIF)  */
 /* ========================================= */
 @media (max-width: 768px) {
-    /* 1. Menyesuaikan Navigasi (Menu Atas) */
+    /* 1. Pengaturan Dasar Teks HP */
+    body {
+        font-size: 0.9rem; /* Mengecilkan teks biasa */
+    }
+
+    /* 2. Menyesuaikan Navigasi (Menu Atas) */
     .navbar {
         flex-direction: column;
         padding: 15px 5%;
         gap: 15px;
     }
     
-.hero {
-        height: 60vh; /* Tingginya kita kurangi khusus di HP agar gambar tidak terlalu ter-crop */
-        background-position: center center; /* Memastikan titik tengah atap gereja jadi fokus */
-        width: 100%; /* Pastikan lebarnya memenuhi layar */
-    }
-
     .nav-links {
         flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
     }
 
-    /* 2. Menyesuaikan Ukuran Teks Sambutan (Hero) */
+    /* 3. Menyesuaikan Background dan Judul (Hero) */
+    .hero {
+        height: 60vh; 
+        background-position: center center; 
+        width: 100%; 
+    }
+
     .hero h1 {
-        font-size: 2rem; /* Mengecilkan teks judul agar tidak kepotong di HP */
+        font-size: 1.8rem; /* Dikecilkan agar lebih pas di layar */
     }
 
     .hero-text p {
@@ -226,25 +231,39 @@ footer {
         padding: 0 15px;
     }
 
-    /* 3. Menyesuaikan Jarak Antar Bagian */
+    /* 4. Menyesuaikan Jarak dan Judul Bagian */
     .content-section {
-        padding: 50px 5%; /* Mengurangi ruang kosong di kiri-kanan */
+        padding: 50px 5%; 
     }
 
     h2 {
-        font-size: 2rem;
-        margin-bottom: 30px;
+        font-size: 1.6rem; /* Judul bagian dikecilkan agar tidak mendominasi */
+        margin-bottom: 25px;
     }
 
-    /* 4. Menyesuaikan Kartu Gembala Sidang (Jadi Atas-Bawah) */
+    /* 5. Menyesuaikan Kartu Gembala Sidang */
     .pastor-card {
-        flex-direction: column; /* Mengubah susunan foto dan teks dari kiri-kanan jadi atas-bawah */
+        flex-direction: column; 
         text-align: center;
         gap: 20px;
     }
 
     .pastor-img {
         width: 200px;
-        height: 200px; /* Foto sedikit dikecilkan untuk layar HP */
+        height: 200px; 
+    }
+
+    /* 6. Memperbaiki Tombol Medsos agar tidak terpotong */
+    .social-links {
+        flex-wrap: wrap; /* Memaksa tombol turun ke bawah jika tidak muat */
+        justify-content: center;
+        gap: 10px; 
+    }
+
+    .social-item {
+        font-size: 0.85rem; /* Ukuran teks medsos dikecilkan */
+        padding: 8px 15px; 
+        flex: 1 1 auto; /* Membantu tombol menyesuaikan ukuran ruang kosong */
+        text-align: center;
     }
 }
