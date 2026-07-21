@@ -179,3 +179,54 @@ footer {
     color: white;
     text-align: center;
 }
+
+
+/* ========================================= */
+/* PENGATURAN UNTUK TAMPILAN HP (RESPONSIF)  */
+/* ========================================= */
+@media (max-width: 768px) {
+    /* 1. Menyesuaikan Navigasi (Menu Atas) */
+    .navbar {
+        flex-direction: column;
+        padding: 15px 5%;
+        gap: 15px;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* 2. Menyesuaikan Ukuran Teks Sambutan (Hero) */
+    .hero h1 {
+        font-size: 2rem; /* Mengecilkan teks judul agar tidak kepotong di HP */
+    }
+
+    .hero-text p {
+        font-size: 0.9rem;
+        padding: 0 15px;
+    }
+
+    /* 3. Menyesuaikan Jarak Antar Bagian */
+    .content-section {
+        padding: 50px 5%; /* Mengurangi ruang kosong di kiri-kanan */
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    /* 4. Menyesuaikan Kartu Gembala Sidang (Jadi Atas-Bawah) */
+    .pastor-card {
+        flex-direction: column; /* Mengubah susunan foto dan teks dari kiri-kanan jadi atas-bawah */
+        text-align: center;
+        gap: 20px;
+    }
+
+    .pastor-img {
+        width: 200px;
+        height: 200px; /* Foto sedikit dikecilkan untuk layar HP */
+    }
+}
