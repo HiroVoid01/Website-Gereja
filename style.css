@@ -1,3 +1,15 @@
+/* Mengatasi celah putih di pinggir layar */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden; /* Kunci utamanya di sini: melarang layar tergeser ke samping */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 /* Pengaturan Dasar */
 * {
     margin: 0;
@@ -192,6 +204,12 @@ footer {
         gap: 15px;
     }
     
+.hero {
+        height: 60vh; /* Tingginya kita kurangi khusus di HP agar gambar tidak terlalu ter-crop */
+        background-position: center center; /* Memastikan titik tengah atap gereja jadi fokus */
+        width: 100%; /* Pastikan lebarnya memenuhi layar */
+    }
+
     .nav-links {
         flex-wrap: wrap;
         justify-content: center;
