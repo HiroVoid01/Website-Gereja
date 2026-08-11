@@ -48,7 +48,7 @@ body {
     width: 60px;  /* <--- TAMBAHKAN INI (harus sama dengan tinggi) */
     border-radius: 50%; /* <--- TAMBAHKAN INI untuk membuatnya bulat */
     object-fit: cover; /* <--- TAMBAHKAN INI biar gambar di dalam bulatannya tidak penyok */
-    border: 2px solid #0077b6; /* <--- OPSIONAL: Tambah bingkai tipis warna biru */
+    border: 2px solid #FFFAFA; /* <--- OPSIONAL: Tambah bingkai tipis warna biru */
 }
 
 .church-name {
